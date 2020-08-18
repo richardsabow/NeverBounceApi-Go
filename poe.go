@@ -38,7 +38,8 @@ package neverbounce
 
 import (
 	"encoding/json"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
+
+	nbModels "github.com/richardsabow/NeverBounceApi-Go/models"
 )
 
 // POE endpoints allow you to confirm frontend verifications performed

@@ -1,9 +1,9 @@
 package neverbounce_test
 
 import (
-	"github.com/NeverBounce/NeverBounceApi-Go"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	neverbounce "github.com/richardsabow/NeverBounceApi-Go"
 )
 
 var _ = Describe("Jobs", func() {

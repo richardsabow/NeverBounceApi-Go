@@ -38,7 +38,8 @@ package neverbounce
 
 import (
 	"encoding/json"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
+
+	nbModels "github.com/richardsabow/NeverBounceApi-Go/models"
 )
 
 // Single endpoints allow you to integrate our email verification into your existing

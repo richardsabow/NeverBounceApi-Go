@@ -39,9 +39,10 @@ package neverbounce
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
 	"io"
 	"os"
+
+	nbModels "github.com/richardsabow/NeverBounceApi-Go/models"
 )
 
 // Jobs endpoints provides high-speed​ validation on a list of email addresses.
@@ -209,7 +210,7 @@ func (r *Jobs) Results(model *nbModels.JobsResultsRequestModel) (*nbModels.JobsR
 
 // Download the results as a CSV to a file.
 // This is useful if your uploading the results to a CRM or are use to working with spreadsheets.
-func (r *Jobs) Download(model *nbModels.JobsDownloadRequestModel, filepath string) (error) {
+func (r *Jobs) Download(model *nbModels.JobsDownloadRequestModel, filepath string) error {
 	model.APIKey = r.apiKey
 
 	// call info API
